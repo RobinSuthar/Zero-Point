@@ -18,7 +18,7 @@ export default async function Page() {
   //excude things such as id , othering that we don't need here
   const data = await prisma.issues.findMany();
   return (
-    <div className="grid grid-cols-2 gap-2 min-w-full">
+    <div className="grid grid-cols-2 gap-2 ">
       <Form action={createIssue}>
         <div className="flex flex-col gap-3 max-w-32">
           <div className="flex flex-row gap-3">
@@ -57,7 +57,7 @@ export default async function Page() {
       </Form>
       <div>
         Current Issue
-        <div className="flex flex-row gap-3">
+        <div className="grid grid-cols-2 gap-3">
           {data.map((issue, index) => {
             return (
               <div key={index} className=" border-2 border-white p-3">
