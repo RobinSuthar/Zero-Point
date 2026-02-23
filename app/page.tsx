@@ -2,20 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-          <div className = "header">
-            <h1>
-              PROJECT ZERO POINT
-            </h1>
+    <div>
+      <div className = "header">
+      TEAM ZERO POINT
+      </div>
 
-            <br />
+      <div className = "bigbox">
 
-            <div className = "box">
-              <h2> LOGIN </h2>
-            </div>
+      <div className = "box">
+      SIGN UP
+      </div>
 
-            <div className = "box">
-              <h2> SIGN UP </h2>
-            </div>
-          </div>
+      <div className = "box">
+      LOG IN
+      </div>
+
+      </div>
+
+    </div>
   );
 }
