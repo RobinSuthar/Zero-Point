@@ -24,3 +24,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.header {
+  display : flex; /* i am using it to expand control of display */
+  justify-content: center;  /* left right se center laaane ke liye */
+  align-items: center;  /* upar neeche se center */
+  height : 100vh; /*uses the whole screen basically*/ 
+  flex-direction : column; /* used it varna row wise cheezin were coming in line*/
+}
+
+.box{
+  background : black;
+  padding : 30px;
+  width : 300px;
+  border-radius: 10px;
+  text-align: center;
+}
